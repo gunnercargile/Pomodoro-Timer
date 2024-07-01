@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="fixed-bar" role="banner"> 
+    <div class="header-container">
+      <a href="https://www.esfm-usa.com/" target="_blank">
+        <img src="esfm2.svg" alt="ESFM Logo">
+      </a>
+    </div>
+  </div>
+
+  <main class="container" role="main">
+
+    <h1>POMODORO TIMER</h1>
+
+    <div class="timer" role="timer" aria-live="assertive" aria-atomic="true">
+      <div class="button-container" role="group" aria-label="Timer controls">
+        <button id="start" aria-label="Start Timer">Start</button>
+        <button id="stop" disabled aria-label="Stop Timer">Stop</button>
+        <button id="reset" aria-label="Reset Timer">Reset</button>
+      </div>
+      <p class="timer-text" aria-live="polite" aria-atomic="true">25:00</p>
+      <audio id="timer-end-sound" src="C:\Users\Gunner\Documents\p-timer\ding.mp3" preload="auto"></audio>
+    </div>
+
+    <div class="description-container">
+      <h2>Why Use the Pomodoro Technique?</h2>
+      <p>Science backs the Pomodoro Technique's effectiveness! Our brains focus best in short bursts.</p> 
+      <p>By working in 25-minute intervals with planned breaks, you combat mental fatigue, avoid procrastination, and boost productivity.</p>
+      <p>Short deadlines keep you motivated, while tracking your Pomodoros helps you understand your work style and manage time effectively.</p> 
+      <p>Unleash your focus potential - try the Pomodoro Technique today!</p>
+    </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2024 Gunner Cargile</p>
+  </footer>
+
+  <script src="p-timer.js"></script>
+  
+</body>
+</html>

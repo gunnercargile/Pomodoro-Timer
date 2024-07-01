@@ -1,0 +1,179 @@
+/* style.css */
+.fixed-bar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;  /* Stretch the bar to full width */
+  height: 70px;  /* Adjust height as needed */
+  background-color: transparent; /* Match background color from body */
+}
+
+.header-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px; /* Add some space between header and main content */
+}
+
+.header-container img {
+  width: 200px;  /* Adjust width and height as needed */
+  height: 105px;
+  margin: 0px;  /* Add some margin for spacing */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #31647d;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  margin-top: 100px;  /* Add some space between headings */
+  margin-bottom: 25px;  /* Add some space between headings */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px; 
+  margin-top: 100px; /* Add space between header and container */
+}
+
+.timer {
+  background-color: #97bf6a;
+  width: fit-content; /* Adjust width based on content */
+  height: fit-content; /* Adjust height based on content */ 
+  display: flex; 
+  flex-direction: column; /* Maintain vertical layout */
+  justify-content: center; /* Center elements vertically */
+  align-items: center; /* Center elements horizontally */
+  padding: 10px;
+  border-radius: 20px; /* Rounded corners for a softer look (optional) */
+}
+
+.timer-text {
+  font-size: 3rem; /* Adjust font size as needed */
+  font-weight: thin;
+  margin-bottom: 0px; /* Adjust margin for spacing with reset button */
+  color: #fff;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.button-container {
+  display: flex; /* Enable flexbox for buttons */
+  justify-content: space-between; /* Distribute buttons horizontally */
+  margin-bottom: 0px;  /* Reduce space between buttons and timer text */
+  gap: 3px; 
+}
+
+button {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  padding: 10px 20px;  /* Reduce padding for smaller buttons */
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 5px 0; /* Adjust margin as needed */
+}
+
+#start { /* Target start button by ID */
+  background-color: #31647d;
+}
+
+#stop {  /* Target stop button by ID */
+  background-color: rgb(207, 67, 67);
+}
+
+#reset {  /* Target reset button by ID */
+  background-color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: thin;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 25px;  /* Add some space between headings */
+}
+
+.footer {
+  background-color: transparent; /* Match background color from body */
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;  
+  text-align: center;
+  width: 100%; /* Stretch footer to full width */
+  padding: 25px 0;
+  margin-top: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .timer-text {
+    font-size: 2.5rem;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  h2 {
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixed-bar {
+    height: 60px;
+  }
+
+  .header-container img {
+    width: 150px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .timer {
+    padding: 8px;
+  }
+
+  .timer-text {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 6px 12px;
+  }
+
+  h2 {
+    font-size: 0.75rem;
+    margin-bottom: 30px;
+  }
+}
+
+.description-container {
+  color: #fff;
+}
